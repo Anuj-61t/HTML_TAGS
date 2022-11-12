@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+</head>
+<body>
+    <img loading="eager" src="https://images.unsplash.com/photo-1668088274717-4978a16525df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=jpg&fit=cover&w=400&q=100" alt="galaxy image url">
+    <p>Image with url</p>
+
+    <img loading="lazy" src="https://images.unsplash.com/photo-1667812222504-38e589c17bd6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="mountain image">
+
+    <img loading="lazy" src="https://images.unsplash.com/photo-1667998641206-3eaa8f7047cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" alt="mountain image">
+
+
+    <figure>
+       <img loading="lazy" src="../assets/galaxy.jpg" alt="galaxy image local" width="400px">
+       <figcaption>A picture of night sky</figcaption>
+    </figure>
+
+
+    <!-- Responsive Images -->
+    <!-- <img 
+    srcset="../assets/galaxy.jpg 480w, ../assets/another.jpg 800w"
+    sizes="(max-width: 600px) 408px, 800px"
+    src="../assets/another.jpg"
+    alt=""> -->
+
+    <picture>   
+        <source media="(min-width:400px)" srcset="../assets/galaxy.jpg">
+        <img src="../assets/another.jpg" alt="" style="width: auto; fit:cover">
+    </picture>
+</body>
+</html>

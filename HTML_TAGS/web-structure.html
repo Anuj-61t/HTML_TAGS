@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Page Structure</title>
+  </head>
+  <body>
+    <!-- A web page starts with a header, following a nav bar might be in the header itself or seperate  
+    then comes the main content with article, section and div, after that there might be aside tag for side bars 
+    and at last comes the footer-->
+
+    <header>
+      <!--Comes first-->>
+      <h1>Header</h1>
+      <!--Heading With h1-->
+    </header>
+
+    <nav>
+      <!--We have navigation bar-->
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="OurTeam">Our Team</a></li>
+        <li><a href="Projects">Projects</a></li>
+        <li><a href="Contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <form action="">
+      <!--Form for search with submit input type-->
+      <input
+        type="text"
+        name="search"
+        id="searchId"
+        placeholder="Search Query"
+      />
+      <input type="submit" value="Go!" />
+    </form>
+
+    <main>
+      <!--start the main content of page-->
+      <article >
+        <!-- encloses a block of related content that makes sense on its own without the rest of the page (e.g., a single blog post) -->
+        <h2>Article heading</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
+          consequatur ducimus assumenda voluptatibus quasi voluptas sequi saepe
+          optio a nostrum illo animi recusandae, voluptatum reiciendis natus
+          tenetur iste ea ipsa quod! Voluptates inventore saepe rerum ullam,
+          consequatur atque iste sunt voluptatem quas iure provident
+          voluptatibus! Deserunt enim veniam non ipsum.
+        </p>
+
+        <section>
+          <!--  it is more for grouping together a single part of the page that constitutes one single piece of functionality -->
+          <h2>Subsection</h2>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reprehenderit, perferendis!
+          </p>
+
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati,
+            maxime.
+          </p>
+        </section>
+
+        <h2>Another Subsection</h2>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+          perspiciatis labore consequuntur nemo, doloribus quia! Inventore fuga
+          iusto, nemo minus dolores ut eveniet eligendi consequuntur dolorem,
+          alias soluta est labore.
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde magnam
+          eligendi adipisci consequuntur velit nobis accusamus temporibus
+          sapiente quis incidunt dolores ea quasi nisi ullam ratione, molestiae
+          atque! Magni, provident.
+        </p>
+      </article>
+
+      <aside>
+        <!--Here comes the side bar as in aside-->
+        <h2>Related</h2>
+        <ul>
+          <li><a href="#link">Oh I do lie to be beside the seaside</a></li>
+          <li><a href="#link">Oh I do like to be beside the sea</a></li>
+          <li><a href="#link">Although in the North of England</a></li>
+          <li><a href="#link">It never stops raining</a></li>
+          <li><a href="#link">Oh well...</a></li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer>
+      <!--Last but not the least footer -->
+      <p>©Copyright 2050 by nobody. All rights reversed.</p>
+    </footer>
+  </body>
+</html>
